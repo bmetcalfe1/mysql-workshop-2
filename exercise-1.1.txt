@@ -1,0 +1,23 @@
+Exercise 1
+
+Which Account owns the most Address Books?
+
+mysql> use decodemtl_addressbook;
+mysql> SELECT COUNT(*), accountId FROM AddressBook GROUP BY accountId ORDER BY COUNT(*) DESC;
++----------+-----------+
+| COUNT(*) | accountId |
++----------+-----------+
+|       19 |         5 |
+|       19 |        14 |
+|       18 |        58 |
+
+Which Address Book contains the most Entries?
+mysql> SELECT COUNT(*), addressBookId FROM Entry GROUP BY addressBookId ORDER BY COUNT(*) DESC;
+
+mysql> SELECT COUNT(*), addressBookId FROM Entry GROUP BY addressBookId ORDER BY COUNT(*) DESC;
++----------+---------------+
+| COUNT(*) | addressBookId |
++----------+---------------+
+|       52 |            37 |
+|       50 |            20 |
+|       49 |            50 
