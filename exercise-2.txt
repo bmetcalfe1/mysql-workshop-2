@@ -1,0 +1,23 @@
+// Exercise 2
+
+Insert one row into decodemtl_addressbook.Account
+Insert one row into decodemtl_addressbook.AddressBook
+Insert three rows into decodemtl_addressbook.Entry
+
+INSERT INTO `Account` (`email`,`password`,`createdOn`,`modifiedOn`) VALUES
+    ("fake@gmail.com", "bsabsa", "2016-07-18", "2016-07-18");
+    
+    Query OK, 1 row affected (0.01 sec)
+    
+INSERT INTO `AddressBook` (`name`,`createdOn`,`modifiedOn`) VALUES
+    ("realness", "2016-07-18", "2016-07-18");
+    
+    Query OK, 1 row affected, 1 warning (0.01 sec)
+    
+INSERT INTO `Entry` (`firstName`,`lastName`,`birthday`,`type`,`subtype`,`contentLineOne`) VALUES
+    ("bro", "dudeman", "1992-04-04", "home", "phone", "(423) 826-4000"),
+    ("dawg", "dudeman", "1992-04-05", "home", "phone", "(423) 826-5000"),
+    ("homie", "dudeman", "1992-04-06", "home", "phone", "(423) 826-6000");
+    Query OK, 3 rows affected, 1 warning (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 1
+    

@@ -1,0 +1,34 @@
+Exercise 3
+
+Retrieve data from the previously inserted decodemtl_addressbook.Account row
+
+mysql> SELECT email FROM Account WHERE id = 1001;
++----------------+
+| email          |
++----------------+
+| fake@gmail.com |
++----------------+
+1 row in set (0.00 sec)
+
+Retrieve data from the previously inserted decodemtl_addressbook.AddressBook row
+
+mysql> SELECT * FROM AddressBook WHERE id = 1101;
++------+-----------+----------+---------------------+---------------------+
+| id   | accountId | name     | createdOn           | modifiedOn          |
++------+-----------+----------+---------------------+---------------------+
+| 1101 |         0 | realness | 2016-07-18 00:00:00 | 2016-07-18 00:00:00 |
++------+-----------+----------+---------------------+---------------------+
+1 row in set (0.00 sec)
+
+Retrieve data from the previously inserted decodemtl_addressbook.Entry rows
+
+mysql> SELECT * FROM Entry WHERE id = 4001 OR id = 4002 OR id = 4003;
++------+---------------+-----------+----------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+| id   | addressBookId | firstName | lastName | birthday            | type | subtype | contentLineOne | contentLineTwo | contentLineThree | contentLineFour | contentLineFive |
++------+---------------+-----------+----------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+| 4001 |             0 | bro       | dudeman  | 1992-04-04 00:00:00 | home | phone   | (423) 826-4000 | NULL           | NULL             | NULL            | NULL            |
+| 4002 |             0 | dawg      | dudeman  | 1992-04-05 00:00:00 | home | phone   | (423) 826-5000 | NULL           | NULL             | NULL            | NULL            |
+| 4003 |             0 | homie     | dudeman  | 1992-04-06 00:00:00 | home | phone   | (423) 826-6000 | NULL           | NULL             | NULL            | NULL            |
++------+---------------+-----------+----------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+3 rows in set (0.00 sec)
+

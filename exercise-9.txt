@@ -1,0 +1,16 @@
+Exercise 9
+
+How many Accounts exist?
+
+SELECT * FROM Account;
+1000 rows in set (0.00 sec)
+
+How many Address Books exist?
+
+SELECT * FROM AddressBook;
+1100 rows in set (0.00 sec)
+
+How many Address Book Entries exist?
+
+SELECT * FROM Entry;
+4000 rows in set (0.00 sec)

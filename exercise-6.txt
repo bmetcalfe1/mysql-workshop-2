@@ -1,0 +1,14 @@
+Exercise 6
+
+Delete decodemtl_addressbook.Account and all associated date
+
+mysql> DROP TABLE Account;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> SHOW TABLES;
++---------------------------------+
+| Tables_in_decodemtl_addressbook |
++---------------------------------+
+| AddressBook                     |
++---------------------------------+
+1 row in set (0.01 sec)

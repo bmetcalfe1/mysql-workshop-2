@@ -1,0 +1,18 @@
+// Exercise 4
+
+Modify the decodemtl_addressbook.Account row
+
+mysql> UPDATE Account SET email = "notfake@gmail.com" WHERE id=1001;                                                                    
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Modify the decodemtl_addressbook.AddressBook row
+
+mysql>  UPDATE AddressBook SET name = "Lil Wayne" WHERE id=1101;                                                                        Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Modify the three decodemtl_addressbook.Entry rows using one query only
+
+mysql>  UPDATE Entry SET lastName = "McSwag" WHERE id = 4001 OR id = 4002 OR id = 4003;                                                                    
+Query OK, 3 rows affected (0.00 sec)
+Rows matched: 3  Changed: 3  Warnings: 0
